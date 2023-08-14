@@ -3,21 +3,28 @@
 #include <stdio.h>
 /**
  * main - enter num
- * Description: ssssssssssdsdsdsdssds
+ * Description: sssssss s s sdsdsd sdssds
  * Return: always 0
- */
+ *
+ *
+*/
 int main(void)
 {
-	int n;
-	int num;
+	int n, digit;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	num = n % 10;
-	if (num > 5)
-	printf("Last digit of %i is %i and is greater than 5\n", num);
-	if (num == 0)
-	printf("Last digit of %i is %i and is 0\n", num);
-	if (num < 6 && '!= 0')
-	printf("Last digit of %i is %i and is greater thaand is less than 6 and not 0\n", num);
+	digit = n % 10;
+
+	if (digit > 5)
+
+	printf("Last digit of %i is %i and is greater than 5\n", n, digit);
+	else if (digit == 0)
+
+	printf("Last digit of %i is %i and is 0\n", n, digit);
+	else if (digit < 6 && digit != 0)
+
+	printf("Last digit of %i is %i and is greater thaand is less than 6 and not 0\n", n, digit);
+
 	return (0);
 }
