@@ -16,6 +16,7 @@ int main(void)
 
 	if (number == 57)
 		number += 39;
+	number++
 
 	}
 
