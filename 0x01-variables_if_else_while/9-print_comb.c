@@ -21,7 +21,7 @@ int main(void)
 	putchar(' ');
 }
 
-	number ++;
+number++;
 	}
 	putchar('\n');
 		return (0);
