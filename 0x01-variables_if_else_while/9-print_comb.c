@@ -20,9 +20,9 @@ int main(void)
 	putchar(',');
 	putchar(' ');
 }
-}
-	number += 8;
 
+	number ++;
+	}
 	putchar('\n');
 		return (0);
 }
