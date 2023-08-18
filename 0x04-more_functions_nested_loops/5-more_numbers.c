@@ -16,7 +16,7 @@ void more_numbers(void)
 	{
 		for (c = 1; c <= 10; c++)
 		{
-			num = c;
+			a = c;
 			if (c > 9)
 			{
 				_putchar(1 + 48);
@@ -24,6 +24,6 @@ void more_numbers(void)
 			}
 			_putchar(a + 48);
 		}
-		_putchar('\n')
+		_putchar('\n');
 	}
 }
