@@ -5,7 +5,7 @@
  *
  * @c: check function
  *
- * Return: return 0 it it true , return 1 if it false
+ * Return: return 1 it it true , return 0 if it false
  *
  */
 
