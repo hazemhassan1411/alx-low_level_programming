@@ -3,7 +3,7 @@
  * print_alphabet - utillize on the _putchar functhin to print alpabet 10 times
  */
 
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 
 	int ch, line;
