@@ -1,15 +1,21 @@
-#include <stdio.h>
+#include "main.h"
 
-/*
- * main - print putchar
- * Description: print putchar with new line
- * Return: always 0
+/**
+ * main - entry
+ * Description: PRINT PUTCHAR
+ * Return: 0
  */
 
 
 
-int main(void)
+int main (void)
 {
-	printf("_putchar\n");
+	char stringe[] = "_putchar";
+	int chara
+
+	for(chara = 0; chara < 8; chara++)
+		_putchar(stringe[chara]);
+	_putchar("\n");
+
 	return (0);
 }
