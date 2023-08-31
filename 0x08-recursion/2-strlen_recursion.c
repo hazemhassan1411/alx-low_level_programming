@@ -12,4 +12,5 @@ int _strlen_recursion(char *s)
 	{
 		nu += _strlen_recursion(s + 1) + 1;
 	}
+	return (nu);
 }
