@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <math.h>
 /**
  * _pow_recursion - it is function
  * @x: it is var
@@ -11,11 +9,13 @@
 int _pow_recursion(int x, int y)
 {
 	if (y < 0)
-	{
 		return (-1);
-	}
-	else
-	{
-		return (pow(x, y));
-	}
+
+	else if (y == 1)
+		return (x);
+
+	else if (y == 0)
+		return (1);
+
+	return (x * _pow_recursion(x, y - 1));
 }
