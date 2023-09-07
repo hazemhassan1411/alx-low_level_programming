@@ -5,7 +5,7 @@
  * @argv: it is a var
  * Return: return 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char *argv[]__attribute__((unused)))
 {
 	printf("%d\n", argc - 1);
 
