@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		{
 			if (m >= c[i])
 			{
-				lc += c[i];
+				lc += m / c[i];
 				m = m % c[i];
 				if (m % c[i] == 0)
 				{
