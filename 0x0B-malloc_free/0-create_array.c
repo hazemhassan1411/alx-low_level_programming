@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * create_array - it is a function
  * @size: it is a size of st
@@ -8,12 +8,12 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	int *y = malloc(size);
+	char *y = malloc(size);
 
 	if (size == 0 || y == 0)
 		return (NULL);
 
 	while (size--)
-		y[size] == c;
+		y[size] = c;
 	return (y);
 }
