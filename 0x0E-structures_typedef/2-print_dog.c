@@ -1,16 +1,13 @@
 #include "dog.h"
 #include <stdio.h>
 /**
- * init_dog - it is a func
+ * print_dog - it is a func
  * @d: it is avar
- * @name: it is a var
- * @age: it is avar
- * @owner: it is a var
  * Return: return d
  */
 
 
-void init_dog(struct dog *d, char *name, float age, char *owner)
+void print_dog(struct dog *d)
 {
 		if (d)
 		{
