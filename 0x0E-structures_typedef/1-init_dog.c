@@ -1,19 +1,20 @@
-#ifndef DOG_H
-#define DOG_H
+#include "dog.h"
 /**
- *  * struct dog - it is struct
- *   * @name: it is name
- *    * @owner: it is owner
- *     * @age: it is age
- *      */
+ * init_dog - it is a func
+ * @d: it is avar
+ * @name: it is avar
+ * @age: it is avar
+ * @owner: it is avar
+ * Return: return d
+ */
 
-struct dog
+
+void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	char *name;
-	char *owner;
-	float age;
-};
-
-void init_dog(struct dog *d, char *name, float age, char *owner);
-
-#endif
+	if (d)
+	{
+		d->name = name
+		d->owner = owner
+		d->age = age
+	}
+}
