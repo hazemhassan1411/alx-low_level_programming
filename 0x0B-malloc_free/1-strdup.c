@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+
 /**
  * _strdup - it is a function
  * @str: it is astring
