@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _strl - it is a function to detrmine the size of string
  * @s: it is string
@@ -32,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 
 	sz1 = _strl(s1);
 	sz2 = _strl(s2);
-	m = malloc ((sz1 + sz2) * sizeof(char) + 1);
+	m = malloc((sz1 + sz2) * sizeof(char) + 1);
 	if (m == 0)
 		return (0);
 
