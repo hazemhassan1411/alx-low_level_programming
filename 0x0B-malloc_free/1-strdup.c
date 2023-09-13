@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * _strdup - it is a function
  * @str: it is astring
@@ -15,7 +15,7 @@ char *_strdup(char *str)
 		return (NULL);
 
 	for (; str[size] != '\0'; size++)
-
+	
 	m = malloc(size * sizeof(*str) + 1);
 
 	if (m == 0)
