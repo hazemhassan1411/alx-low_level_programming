@@ -11,7 +11,7 @@ int _strl(char *s)
 	int size = 0;
 
 	for (; s[size] != '\0'; size++)
-	;	
+	;
 	return (size);
 }
 /**
@@ -45,5 +45,5 @@ char *str_concat(char *s1, char *s2)
 			m[i] = s2[i - sz1];
 	}
 	m[i] = '\0';
-	return (0);
+	return (m);
 }
