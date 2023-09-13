@@ -7,10 +7,11 @@
 
 int _strl(char *s)
 {
-	int size;
+	int size = 0;
 
-	for (size = 0; size != '\0'; size++)
-		return (0);
+	for (; size != '\0'; size++)
+	;	
+	return (size);
 }
 /**
  * str_concat - it is a functhin
