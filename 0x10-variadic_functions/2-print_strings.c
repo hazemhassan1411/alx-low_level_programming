@@ -19,7 +19,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	va_start(rp, n);
 	while (i--)
-		printf("%s%s",(str =  va_arg(rp, char *)) ? str : "(nil)",
+		printf("%s%s", (str =  va_arg(rp, char *)) ? str : "(nil)",
 	i ? (separator ? separator : "") : "\n");
 		va_end(rp);
 }
