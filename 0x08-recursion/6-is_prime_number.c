@@ -6,7 +6,7 @@
  * Return: return
  */
 int ch_prime(int n, int other);
-int is_prime_number(int n);
+int is_prime_number(int n)
 {
 	return (ch_prime(n, 2));
 }
@@ -16,7 +16,7 @@ int is_prime_number(int n);
  * @other: it is a var
  * Return:return prime num
  */
-int ch_prime(int n, int other);
+int ch_prime(int n, int other)
 {
 	if (other >= n && n > 1)
 		return (1);
