@@ -8,7 +8,7 @@ int stringl(char *s)
 {
 	int size;
 
-	for (size = 0; s[size] != '\0'; size++)
+	for (; s[size] != '\0'; size++)
 		;
 	return (size);
 }
@@ -26,7 +26,7 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	for (k = 0; k < ac; k++, cn++)
+	for (; k < ac; k++, cn++)
 		cn += stringl(av[k]);
 	s = malloc(sizeof(char) * cn + 1);
 
