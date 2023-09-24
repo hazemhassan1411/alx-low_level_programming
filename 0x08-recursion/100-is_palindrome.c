@@ -18,24 +18,23 @@ int is_char(char c)
 int check_palindrome(char *s, int left, int right)
 {
 	if (left >= right)
-	{
-		return (1);
+{
+	return (1);
 	}
-	while (!is_char(s[left]) && left < right)
+	if (!is_char(s[left]))
 	{
-		left++;
+		return (check_palindrome(s, left + 1, right));
 	}
-	while (!is_char(s[right]) && left < right)
+	if (!is_char(s[right]))
 	{
-		right--;
+		return (check_palindrome(s, left, right - 1));
 	}
-
 	if (s[left] != s[right])
 	{
 		return (0);
 	}
 		return (check_palindrome(s, left + 1, right - 1));
-}
+	}
 /**
  * is_palindrome - it is a func
  * @s: it is
