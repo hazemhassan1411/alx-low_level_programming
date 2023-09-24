@@ -6,7 +6,7 @@
  */
 int stringl(char *s)
 {
-	int size;
+	int size = 0;
 
 	for (; s[size] != '\0'; size++)
 		;
