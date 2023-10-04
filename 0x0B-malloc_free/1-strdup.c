@@ -4,7 +4,7 @@
  * @str: it is integr
  * Return: the array
 */
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	int i, s;
 	char *m;
