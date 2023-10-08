@@ -2,7 +2,7 @@
 /**
  * main - it is a func
  * @argv: it is string
- * @argv: it is i 
+ * @argc: it is i
  * Return: return the name
  */
 
