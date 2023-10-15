@@ -7,10 +7,10 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
+        char *separator = "";
+        const char *ptr = format;
 
 	va_start(args, format);
-	char *separator = "";
-	const char *ptr = format;
 
 	while (*ptr != '\0')
 	{
