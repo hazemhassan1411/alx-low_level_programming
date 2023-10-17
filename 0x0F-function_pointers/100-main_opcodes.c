@@ -10,15 +10,15 @@
 
 int main(int argc, char **argv)
 {
-        char *f = (char *)main;
-        int h;
+char *f = (char *)main;
+int h;
 
-        if (argc != 2)
-                printf("Error\n"), exit(1);
-                h = atoi(argv[1]);
-        if (h < 0)
-                printf("Error\n"), exit(2);
-        while (h--)
-                printf("%02hhx%s", *f++, h ? " " : "\n");
-        return (0);
+if (argc != 2)
+printf("Error\n"), exit(1);
+h = atoi(argv[1]);
+if (h < 0)
+printf("Error\n"), exit(2);
+while (h--)
+printf("%02hhx%s", *f++, h ? " " : "\n");
+return (0);
 }
