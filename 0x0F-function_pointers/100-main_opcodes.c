@@ -5,7 +5,7 @@
  * main - it is main
  * @argc: it is argc
  * @argv: it is argv
- * Return:return 0
+ * Return: return 0
  */
 
 int main(int argc, char **argv)
