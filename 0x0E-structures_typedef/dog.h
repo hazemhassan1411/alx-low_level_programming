@@ -3,9 +3,9 @@
 
 /**
  * struct dog - it is struct
- * name: pointer to the name
- * owner: it is pointer to owner
- * age: it is the age
+ * @name: pointer to the name
+ * @owner: it is pointer to owner
+ * @age: it is the age
  */
 
 struct dog
