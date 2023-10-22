@@ -12,9 +12,9 @@ int last_index(char *s)
 	int g = 0;
 
 	if (*s > '\0')
-		n += last_index(s + 1) + 1;
+		g += last_index(s + 1) + 1;
 
-	return (n);
+	return (g);
 }
 /**
  * is_pallindrome - it is func
@@ -43,5 +43,5 @@ int check(char *s, int start, int end, int m)
 	else if (s[start] != s[end])
 		return (0);
 	else
-		return (check(s, start + 1, end - 1, m))
+		return (check(s, start + 1, end - 1, m));
 }
