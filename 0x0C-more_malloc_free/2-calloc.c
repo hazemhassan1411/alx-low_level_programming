@@ -17,6 +17,7 @@ char *mm(char *so, char b, unsigned int num)
 		*so++ = b;
 		return (pointer);
 	}
+
 }
 
 
