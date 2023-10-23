@@ -1,11 +1,10 @@
 #include "main.h"
-
 /**
- * mm -a function help
- *@num: var1
- *@b: var3
- *@so: var2
- * Return: return no2
+ * mm -a function help ___
+ *@num: var 1_____
+ *@b: var 3 ____
+ *@so: var 2 _____
+ * Return: return no_2 ____
  **/
 
 char *mm(char *so, char b, unsigned int num)
@@ -15,9 +14,8 @@ char *mm(char *so, char b, unsigned int num)
 	while (num--)
 	{
 		*so++ = b;
-		return (pointer);
 	}
-
+	return pointer;
 }
 
 
