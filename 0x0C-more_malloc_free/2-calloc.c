@@ -13,8 +13,10 @@ char *mm(char *so, char b, unsigned int num)
 	char *pointer = so;
 
 	while (num--)
+	{
 		*so++ = b;
 		return (pointer);
+	}
 }
 
 
@@ -29,10 +31,14 @@ void *_calloc(unsigned int memb, unsigned int size)
 	void *mk;
 
 	if (size == 0 || memb == 0)
+	{
 		return (NULL);
+	}
 		mk = malloc(memb * size);
 	if (mk == NULL)
+	{
 		return (NULL);
+	}
 		mm(mk, 0, memb * size);
 		return (mk);
 }
