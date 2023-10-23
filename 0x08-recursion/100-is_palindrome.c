@@ -1,47 +1,47 @@
 #include "main.h"
-/**
- * last_index - it is func
- * @s: it is a pointer
- * Return: return
- */
 
-int is_pallindrome(char *s);
-int check(char *s, int start, int end, int m);
-int last_index(char *s)
+/**
+ * last_n-a function help____
+ *@s: pointer___
+ * Return: A_l_w_a_y_s (n)____
+ */
+int is_palindrome(char *s);
+int charactar(char *soso, int st, int finall, int mody);
+int last_n(char *s)
 {
-	int g = 0;
+	int no = 0;
 
 	if (*s > '\0')
-		g += last_index(s + 1) + 1;
-
-	return (g);
+		no += last_n(s + 1) + 1;
+		return (no);
 }
+
 /**
- * is_pallindrome - it is func
- * @s: it is a pointer
- * Return: return
+ *is_palindrome-a function returns 1 if a string is a palindrome and 0 if not_
+ * Return: A_l_w_a_y_s (n)____
+ *@s: pointer___
+ */
+int is_palindrome(char *s)
+{
+	int finall = last_n(s);
+		return (charactar(s, 0, finall - 1, finall % 2));
+}
+
+/**
+ * charactar-a function help____
+ *@s:pointer___
+ *@st: h_e_1
+ *@mody: help_2___
+ *@finall: he_3
+ * Return: A_l_w_a_y_s (n)____
  */
 
-int is_pallindrome(char *s)
+int charactar(char *s, int st, int finall, int mody)
 {
-	int end = last_index(s);
-
-	return (check(s, 0, end - 1, end % 2));
-}
-/**
- * check - it is func
- * @s: it is a pointer
- * @start: it is a pointer
- * @end: it is a pointer
- * @m: it is a pointer
- * Return: return
- */
-int check(char *s, int start, int end, int m)
-{
-	if ((start == end && m != 0) || (start == end + 1 && m == 0))
+	if ((st == finall && mody != 0) || (st == finall + 1 && mody == 0))
 		return (1);
-	else if (s[start] != s[end])
+	else if (s[st] != s[finall])
 		return (0);
 	else
-		return (check(s, start + 1, end - 1, m));
+		return (charactar(s, st + 1, finall - 1, mody));
 }
