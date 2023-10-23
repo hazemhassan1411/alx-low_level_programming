@@ -10,10 +10,9 @@ int charactar(char *soso, int st, int finall, int mody);
 int last_n(char *s)
 {
 	int no = 0;
-
 	if (*s > '\0')
 		no += last_n(s + 1) + 1;
-		return (no);
+	return (no);
 }
 
 /**
