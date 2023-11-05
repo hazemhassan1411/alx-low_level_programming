@@ -1,8 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <fcntl.h>
+#include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <errno.h>
+#include <string.h>
 
-
+#define BUFFER_SIZE 1024
 
 /**
  * print_error - Print an error message and exit with a specific code.
