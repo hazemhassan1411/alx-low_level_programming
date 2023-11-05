@@ -2,6 +2,8 @@
 #include <sys/stat.h>
 #include <errno.h>
 
+
+
 /**
  * print_error - Print an error message and exit with a specific code.
  * @code: The error code to return.
