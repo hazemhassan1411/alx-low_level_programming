@@ -5,8 +5,30 @@
 #include <string.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include "main.h"
 
+/**
+ * print_elf_header_info - Print information from the ELF header
+ * @header: Pointer to the ELF header
+ */
+void print_elf_header_info(const Elf64_Ehdr *header) {
+	int i;
 
+	printf("ELF Header:\n");
+	printf("  Magic:   ");
+	for (i = 0; i < 16; i++) {
+		printf("%02x ", header->e_ident[i]);
+	}
+	printf("\n");
+	printf("  Class:                             ELF%d\n",
+		   header->e_ident[4] == 1 ? 32 : 64);
+	printf("  Data:                              2's complement, %s endian\n",
+		   header->e_ident[5] == 1 ? "little" : "big");
+	printf("  Version:                           %u\n", header->e_version);
+	printf("  OS/ABI:                            %s\n",
+		   header->e_ident[7] == 0 ? "UNIX - System V" : "unknown");
+	printf("  ABI Version:                       %u\n", header->e_ident[8]);
+}
 
 /**
  * print_elf_header_info - Print information from the ELF header
