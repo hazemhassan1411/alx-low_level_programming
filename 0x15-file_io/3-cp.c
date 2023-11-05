@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		print_error(97, "Usage: cp file_from file_to\n");
+		print_error(97, "Usage: cp file_from file_to\n", "");
 	}
 
 	from_fd = open(argv[1], O_RDONLY);
@@ -82,11 +82,11 @@ int main(int argc, char *argv[])
 	copy_file(from_fd, to_fd);
 	if (close(from_fd) == -1)
 	{
-		print_error(100, "Error: Can't close fd %d\n", from_fd);
+		print_error(100, "Error: Can't close fd %d\n", argv[1]);
 	}
 	if (close(to_fd) == -1)
 	{
-		print_error(100, "Error: Can't close fd %d\n", to_fd);
+		print_error(100, "Error: Can't close fd %d\n", argv[2]);
 	}
 	return (0);
 }
